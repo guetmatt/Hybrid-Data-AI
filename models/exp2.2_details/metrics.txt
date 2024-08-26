@@ -1,0 +1,29 @@
+TRAINING
+Found 3642 files belonging to 3 classes.
+Using 2914 files for training.
+Found 3642 files belonging to 3 classes.
+Using 728 files for validation.
+
+Initial Training epochs: 30
+early stopping epoch: 28
+accuracy: 0.9099 - loss: 0.2488 - val_accuracy: 0.8269 - val_loss: 0.5359
+
+
+
+
+TEST
+Found 403 files belonging to 3 classes.
+
+Overall test loss: 0.4405
+Overall test accuracy: 0.8387
+
+Total test images: 403
+Correct predictions: 338
+False Predictions: 65
+Accuracy:0.8387
+
+Confusion Matrix:
+['bus', 'car', 'motorbike']
+[[147  13   7]
+ [ 22  70   9]
+ [  6   8 121]]
