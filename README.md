@@ -1,4 +1,4 @@
-This is an implementation for an image classification and synthetic image generation task for a university course. The tasks include classifying images into images of cars, bikes, and busses. Additionally, synthetic images have been created (see directory 'synthetic_images'), trying to enhance the training process of a classifier model. Several experiments have been conducted. Further details can be found in the accompanying paper. 
+This is an implementation for an image classification and synthetic image generation task for a university course. The tasks include classifying images into images of cars, bikes, and busses. Additionally, synthetic images have been created (see directory ´´´synthetic_images´´´), trying to enhance the training process of a classifier model. Several experiments have been conducted. Further details can be found in the accompanying paper. 
 
 # Python Dependencies
 - tensorflow version >= 2.17.0
