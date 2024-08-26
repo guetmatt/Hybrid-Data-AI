@@ -15,7 +15,7 @@ This is an implementation for an image classification and synthetic image genera
 # Python Files
 
 ## image_classification_cnn.py
-Create, train and test a cnn model (Convolutional Neural Network) on an image classification task using images from the 'data' directory. Can also be used to load trained models from the 'models' directory. Different experiment setups are further detailed in the accompanying paper.
+Create, train and test a cnn model (Convolutional Neural Network) on an image classification task using images from the ```data``` directory. Can also be used to load trained models from the ```models``` directory. Different experiment setups are further detailed in the accompanying paper.
 
 ## image_generation_dcgan.py
-Create and train a dcgan model (Deep Convolutional Generative Adversarial Network) using images from the 'dataset_cars_bikes' directory. Can also be used to generate synthetic images. A model trained car images can be loaded from the 'training_checkpoints' directory.
+Create and train a dcgan model (Deep Convolutional Generative Adversarial Network) using images from the ```dataset_cars_bikes``` directory. Can also be used to generate synthetic images. A model trained car images can be loaded from the ```training_checkpoints``` directory.
