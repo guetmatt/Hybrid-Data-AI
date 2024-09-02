@@ -19,3 +19,10 @@ Create, train and test a cnn model (Convolutional Neural Network) on an image cl
 
 ## image_generation_dcgan.py
 Create and train a dcgan model (Deep Convolutional Generative Adversarial Network) using images from the ```dataset_cars_bikes``` directory. Can also be used to generate synthetic images. A model trained car images can be loaded from the ```training_checkpoints``` directory.
+
+
+# Datasets
+The data for this project was combined from several datasets. Images from the following datasets were taken:
+- Synthetic Image Dataset: https://www.kaggle.com/datasets/zarkonium/synthetic-image-dataset-cats-dogs-bikes-cars/data
+- 5 vehicles for classification: https://www.kaggle.com/datasets/mrtontrnok/5-vehichles-for-multicategory-classification
+- car vs Bike Classification Dataset: https://www.kaggle.com/datasets/utkarshsaxenadn/car-vs-bike-classification-dataset
