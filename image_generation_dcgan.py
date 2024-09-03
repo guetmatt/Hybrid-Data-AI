@@ -9,6 +9,8 @@ import PIL
 from tensorflow.keras import layers
 import time
 import pathlib
+import joblib
+from joblib import dump, load
 from IPython import display
 
 
@@ -156,6 +158,24 @@ def generate_and_save_images(model, epoch, test_input):
      plt.close()
 
 
+# save model to  disk
+def save_model(model, filepath):
+
+    filepath = pathlib.Path(filepath)
+    joblib.dump(model, filepath)
+
+    return None
+
+
+# load model from disk
+def load_model(filepath):
+
+    filepath = pathlib.Path(filepath)
+    model = joblib.load(filepath)
+
+    return model
+
+
 
 if __name__ == "__main__":
   
@@ -212,11 +232,23 @@ if __name__ == "__main__":
   checkpoint = tf.train.Checkpoint(generator_optimizer=generator_optimizer,
                                    discriminator_optimizer=discriminator_optimizer,
                                    generator=generator, discriminator=discriminator)
-
+  
   # train discriminator and generator model
   train(dataset, EPOCHS, generator, discriminator,
         generator_optimizer, discriminator_optimizer,
         batch_size, noise_dim, seed)
 
+  #%%
   # restore the latest checkpoint from training on car images
   # checkpoint.restore(tf.train.latest_checkpoint(checkpoint_dir))
+
+  # %%
+  # save model to disk with file ending '.sav'
+  model_path = "./training_checkpoints/generator_cars.sav"
+  save_model(generator, model_path)
+  model_path = "./training_checkpoints/discriminator_cars.sav"
+  save_model(discriminator, model_path)
+
+  # load model from disk
+  # generator = load_model("./training_checkpoints/generator_cars.sav")
+  # discriminator = load_model("./training_checkpoints/discriminator_cars.sav")
